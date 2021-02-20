@@ -1,18 +1,20 @@
 name: local_auth_theme
 description: Local fingerprint authenticator with dark theme support.
 version: 0.0.1
-author: Bala
 homepage: https://github.com/balakumar98/local_auth_theme.git
 
 flutter:
   plugin:
-    androidPackage: io.flutter.plugins.localauth
-    iosPrefix: FLT
-    pluginClass: LocalAuthPlugin
+    platforms:
+      android:
+        package: io.flutter.plugins.localauth
+        pluginClass: LocalAuthPlugin
+      ios:
+        pluginClass: LocalAuthPlugin
 
 environment:
-  sdk: ">=2.0.0-dev.28.0 <3.0.0"
-  flutter: ">=0.1.4 <2.0.0"
+  sdk: ">=2.1.0 <3.0.0"
+  flutter: ">=1.14.0 <2.0.0"
 
 dependencies:
   flutter:
