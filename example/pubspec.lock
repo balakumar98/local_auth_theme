@@ -21,14 +21,21 @@ packages:
     source: sdk
     version: "0.0.0"
   intl:
-    dependency: "direct main"
+    dependency: transitive
     description:
       name: intl
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.15.8"
-  meta:
+  local_auth:
     dependency: "direct main"
+    description:
+      path: ".."
+      relative: true
+    source: path
+    version: "0.4.0+1"
+  meta:
+    dependency: transitive
     description:
       name: meta
       url: "https://pub.dartlang.org"
